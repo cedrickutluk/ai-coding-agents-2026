@@ -32,7 +32,7 @@ This document outlines the security risks, reliability limitations, and long-ter
 
 ## 4. Supported Facts vs. Future Predictions
 
-| Supported Facts (Current Evidence) | Future Predictions (Trends to Watch) |
+| **Supported Facts (Current Evidence)** | **Future Predictions (Trends to Watch)** |
 | :--- | :--- |
 | AI-generated code has higher rates of security vulnerabilities if unreviewed (OWASP / Security Benchmarks). | Coding agents will autonomously manage end-to-end pull requests and deployment pipelines. |
 | AI agents increase initial coding speed but increase code review overhead. | Entry-level developer roles will transition into prompt-engineering and agent-auditing positions. |
