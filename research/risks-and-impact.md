@@ -6,11 +6,22 @@ This document outlines the security risks, reliability limitations, and long-ter
 ---
 
 ## 1. Reliability & Security Risks
-
-* **Hallucinations & Flawed Logic:** AI models often generate code that looks syntactically correct but contains subtle logic bugs, race conditions, or calls to non-existent packages/APIs (hallucinated dependencies).
-* **Package Hallucination Attacks (Supply Chain Vulnerabilities):** Attackers actively publish malicious software packages matching common AI-hallucinated library names, tricking developers into downloading malware.
-* **Security & Vulnerability Propagation:** AI models trained on public repositories frequently reproduce insecure coding patterns, such as hardcoded credentials, SQL injection vectors, and weak cryptographic practices.
-* **Data Privacy & IP Leakage:** Uploading proprietary source code or sensitive API keys to third-party AI agent platforms poses severe intellectual property and compliance risks.
+1. Key Statistics & Vulnerability Metrics
+*The 40% Vulnerability Baseline: Leading AI code generators output insecure code 35% to 45% of the time, introducing critical vulnerabilities into software systems.
+*The Verification Deficit: While AI generates roughly 46% of all production code, an acute verification gap exists—96% of developers admit they do not fully trust it, yet only 48% consistently run security scans before merging.
+*Technical Debt Explosion: AI-assisted Pull Requests (PRs) introduce significantly more security issues and an elevated code smell rate (>90%) compared to purely human-written code.
+2. "Slop Code" & Technical Debt Crisis
+*Machine-Speed Liabilities: The industry uses the term "Slop Code" to describe low-quality, unvetted AI snippets pushed to repositories at machine velocity.
+*The Review Bottleneck: This code compiles and passes basic paths but lacks architectural awareness. Remediation operates at human speed, compounding enterprise technical debt and creating severe structural brittleness.
+3. Hallucinations & Flawed Logic
+*Functional Illusions: LLMs optimize for syntactic plausibility rather than logical correctness, resulting in code that looks correct but contains deep runtime bugs, race conditions, or calls to non-existent APIs.
+4. Package Hallucination Attacks (Supply Chain Vulnerabilities)
+*"Slopsquatting" Exploits: Attackers monitor the fictional library names commonly hallucinated by AI tools.
+*Malicious Squatting: They register these identical names on public package managers (like npm or PyPI) with embedded malware, tricking unsuspecting developers into downloading supply-chain exploits.
+5. Security & Vulnerability Propagation
+*Legacy Bug Reproduction: Trained on open-source repositories, AI mirrors human errors. It systematically reintroduces classic OWASP Top 10 bugs, including SQL injections, cross-site scripting (XSS), hardcoded credentials, and weak encryption.
+6. Data Privacy & IP Leakage
+*Telemetry Exposure: Uploading proprietary code blocks or private API keys to third-party AI platforms risks exposing intellectual property. If prompts are used for retraining, sensitive enterprise code can leak into public model matrices
 
 ---
 
@@ -42,7 +53,6 @@ This document outlines the security risks, reliability limitations, and long-ter
 
 ## 5. Credible Sources & References
 
-1. **OWASP Top 10 for LLM Applications:** [https://owasp.org/www-project-top-10-for-large-language-model-applications/](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-2. **GitLab Global DevSecOps Report:** [https://about.gitlab.com/developer-survey/](https://about.gitlab.com/developer-survey/)
-3. **GitHub Copilot Impact Studies:** [https://github.blog/news-insights/research/](https://github.blog/news-insights/research/)
-4. **ReversingLabs Research on AI Package Hallucinations:** [https://www.reversinglabs.com/blog](https://www.reversinglabs.com/blog)
+1. **Snyk GenAI Security & Top Tools Analysis:** [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
+2. **The State of Code & Developer Realities:** [https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/](https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/)
+3. **ArXiv Academic Analysis:** [https://arxiv.org/html/2508.14727v1](https://arxiv.org/html/2508.14727v1)
