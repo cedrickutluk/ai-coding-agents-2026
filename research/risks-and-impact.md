@@ -7,37 +7,37 @@ This document outlines the security risks, reliability limitations, and long-ter
 
 ## 1. Reliability & Security Risks
 1. Key Statistics & Vulnerability Metrics
-*The 40% Vulnerability Baseline: Leading AI code generators output insecure code 35% to 45% of the time, introducing critical vulnerabilities into software systems.
-*The Verification Deficit: While AI generates roughly 46% of all production code, an acute verification gap exists—96% of developers admit they do not fully trust it, yet only 48% consistently run security scans before merging.
-*Technical Debt Explosion: AI-assisted Pull Requests (PRs) introduce significantly more security issues and an elevated code smell rate (>90%) compared to purely human-written code.
+- The 40% Vulnerability Baseline: Leading AI code generators output insecure code 35% to 45% of the time, introducing critical vulnerabilities into software systems.
+- The Verification Deficit: While AI generates roughly 46% of all production code, an acute verification gap exists—96% of developers admit they do not fully trust it, yet only 48% consistently run security scans before merging.
+- Technical Debt Explosion: AI-assisted Pull Requests (PRs) introduce significantly more security issues and an elevated code smell rate (>90%) compared to purely human-written code.
 2. "Slop Code" & Technical Debt Crisis
-*Machine-Speed Liabilities: The industry uses the term "Slop Code" to describe low-quality, unvetted AI snippets pushed to repositories at machine velocity.
-*The Review Bottleneck: This code compiles and passes basic paths but lacks architectural awareness. Remediation operates at human speed, compounding enterprise technical debt and creating severe structural brittleness.
+- Machine-Speed Liabilities: The industry uses the term "Slop Code" to describe low-quality, unvetted AI snippets pushed to repositories at machine velocity.
+- The Review Bottleneck: This code compiles and passes basic paths but lacks architectural awareness. Remediation operates at human speed, compounding enterprise technical debt and creating severe structural brittleness.
 3. Hallucinations & Flawed Logic
-*Functional Illusions: LLMs optimize for syntactic plausibility rather than logical correctness, resulting in code that looks correct but contains deep runtime bugs, race conditions, or calls to non-existent APIs.
+- Functional Illusions: LLMs optimize for syntactic plausibility rather than logical correctness, resulting in code that looks correct but contains deep runtime bugs, race conditions, or calls to non-existent APIs.
 4. Package Hallucination Attacks (Supply Chain Vulnerabilities)
-*"Slopsquatting" Exploits: Attackers monitor the fictional library names commonly hallucinated by AI tools.
-*Malicious Squatting: They register these identical names on public package managers (like npm or PyPI) with embedded malware, tricking unsuspecting developers into downloading supply-chain exploits.
+- "Slopsquatting" Exploits: Attackers monitor the fictional library names commonly hallucinated by AI tools.
+- Malicious Squatting: They register these identical names on public package managers (like npm or PyPI) with embedded malware, tricking unsuspecting developers into downloading supply-chain exploits.
 5. Security & Vulnerability Propagation
-*Legacy Bug Reproduction: Trained on open-source repositories, AI mirrors human errors. It systematically reintroduces classic OWASP Top 10 bugs, including SQL injections, cross-site scripting (XSS), hardcoded credentials, and weak encryption.
+- Legacy Bug Reproduction: Trained on open-source repositories, AI mirrors human errors. It systematically reintroduces classic OWASP Top 10 bugs, including SQL injections, cross-site scripting (XSS), hardcoded credentials, and weak encryption.
 6. Data Privacy & IP Leakage
-*Telemetry Exposure: Uploading proprietary code blocks or private API keys to third-party AI platforms risks exposing intellectual property. If prompts are used for retraining, sensitive enterprise code can leak into public model matrices
+- Telemetry Exposure: Uploading proprietary code blocks or private API keys to third-party AI platforms risks exposing intellectual property. If prompts are used for retraining, sensitive enterprise code can leak into public model matrices
 
 ---
 
 ## 2. Why Human Review and Testing Remain Essential
 
-* **Lack of Contextual Understanding:** AI agents evaluate code line-by-line or within prompt windows, but lack deep understanding of business logic, domain constraints, and system architecture.
-* **Verification vs. Generation:** While AI can rapidly generate hundreds of lines of code, verifying correctness requires comprehensive automated testing (unit, integration, regression) and expert code review.
-* **Accountability & Liability:** AI models cannot take responsibility for system failures, compliance breaches, or outage costs. The software engineer remains strictly accountable for code deployed to production.
+- **Lack of Contextual Understanding:** AI agents evaluate code line-by-line or within prompt windows, but lack deep understanding of business logic, domain constraints, and system architecture.
+- **Verification vs. Generation:** While AI can rapidly generate hundreds of lines of code, verifying correctness requires comprehensive automated testing (unit, integration, regression) and expert code review.
+- **Accountability & Liability:** AI models cannot take responsibility for system failures, compliance breaches, or outage costs. The software engineer remains strictly accountable for code deployed to production.
 
 ---
 
 ## 3. Shifting Responsibilities for Developers
 
-* **From Code Writers to Code Reviewers & Architects:** Developers spend less time writing boilerplate syntax and more time analyzing, validating, and refactoring agent-generated code.
-* **Emphasis on System Architecture & Security:** Focus shifts toward high-level system design, threat modeling, API integration, and prompt engineering/orchestration.
-* **Quality Assurance Emphasis:** Developers must develop stronger skill sets in unit testing, debugging, and edge-case scenario evaluation.
+- **From Code Writers to Code Reviewers & Architects:** Developers spend less time writing boilerplate syntax and more time analyzing, validating, and refactoring agent-generated code.
+- **Emphasis on System Architecture & Security:** Focus shifts toward high-level system design, threat modeling, API integration, and prompt engineering/orchestration.
+- **Quality Assurance Emphasis:** Developers must develop stronger skill sets in unit testing, debugging, and edge-case scenario evaluation.
 
 ---
 
