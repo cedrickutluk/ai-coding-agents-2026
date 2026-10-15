@@ -2,6 +2,7 @@
 
 ## Overview
 This document outlines the security risks, reliability limitations, and long-term impact on developers associated with integrating AI coding agents into modern software engineering workflows.
+
 Researcher: Sebastian Gonzalez
 
 ---
@@ -31,6 +32,10 @@ Researcher: Sebastian Gonzalez
 - **Lack of Contextual Understanding:** AI agents evaluate code line-by-line or within prompt windows, but lack deep understanding of business logic, domain constraints, and system architecture.
 - **Verification vs. Generation:** While AI can rapidly generate hundreds of lines of code, verifying correctness requires comprehensive automated testing (unit, integration, regression) and expert code review.
 - **Accountability & Liability:** AI models cannot take responsibility for system failures, compliance breaches, or outage costs. The software engineer remains strictly accountable for code deployed to production.
+- **Contextual Blind Spots:** LLMs generate code sequentially based on local context windows or prompt boundaries. They lack global architectural awareness, failing to enforce project-specific business logic, authorization rules, or existing design patterns.
+- **Verification Bottleneck:** According to the *Sonar State of Code Developer Survey*, 96% of developers do not fully trust AI-generated code to be functionally correct, and 95% spend significant time reviewing and debugging AI output. While generation is fast, validation remains a human intensive bottleneck.
+- **Erosion of Automated Verification:** Research indicates that while AI tool usage has surged, only 48% of developers consistently run automated security scans before merging AI-assisted pull requests, creating a gap where subtle vulnerabilities pass undetected into production.
+- **Legal & Compliance Accountability:** AI models cannot be held legally or financially liable for system outages, data breaches, or compliance failures. The human developer remains solely responsible for code deployed to production.
 
 ---
 
@@ -44,7 +49,7 @@ Researcher: Sebastian Gonzalez
 
 ## 4. Supported Facts vs. Future Predictions
 
-| **Supported Facts (Current Evidence)** | **Future Predictions (Trends to Watch)** |
+| **Supported Facts (Current Evidence)** | **Future Predictions (Trends to Watch)** |[https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
 | :--- | :--- |
 | AI-generated code has higher rates of security vulnerabilities if unreviewed (OWASP / Security Benchmarks). | Coding agents will autonomously manage end-to-end pull requests and deployment pipelines. |
 | AI agents increase initial coding speed but increase code review overhead. | Entry-level developer roles will transition into prompt-engineering and agent-auditing positions. |
@@ -57,3 +62,5 @@ Researcher: Sebastian Gonzalez
 1. **Snyk GenAI Security & Top Tools Analysis:** [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
 2. **The State of Code & Developer Realities:** [https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/](https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/)
 3. **ArXiv Academic Analysis:** [https://arxiv.org/html/2508.14727v1](https://arxiv.org/html/2508.14727v1)
+4. **Sonar State of Code Developer Survey:** [https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
+5. **Veracode GenAI Code Security Report:** [https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
