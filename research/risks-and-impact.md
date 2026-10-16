@@ -26,7 +26,7 @@ Researcher: Sebastian Gonzalez
 - **Potential Transition Toward Code Auditing:** Developer roles may progressively shift from writing initial boilerplate syntax toward reviewing, auditing, and refactoring agent-generated outputs.
 - **Focus on System Architecture and Threat Modeling:** As syntax suggestions become automated, software engineering responsibilities are expected to place greater emphasis on system design, threat modeling, and contract definitions.
 - **Prompt Engineering and Agent Orchestration:** Software teams may increasingly require skills in prompt boundary setting, specification writing, and agent workflow orchestration.
-- **Elevated Quality Assurance and Edge-Case Analysis:** Human developers remain essential for writing integration tests and identifying edge cases that AI models consistently overlook.
+- **Elevated Quality Assurance and Edge-Case Analysis:** Human developers remain essential for writing integration tests and identifying edge cases that AI models may overlook.
 
 ---
 
@@ -41,10 +41,17 @@ Researcher: Sebastian Gonzalez
 
 ## 5. Credible Sources & References
 
-1. **Snyk GenAI Code Security** [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
-2. **Veracode GenAI Security Analysis:** [https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
-3. **SonarSource State of Code:** [https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
-4. **Cloud Security Alliance (CSA):** [https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/)
-5. **Arnica AI Code Security Guide:** [https://www.arnica.io/blog/ai-code-security-complete-guide](https://www.arnica.io/blog/ai-code-security-complete-guide)
-6. **ReversingLabs Research:** [https://www.reversinglabs.com/blog/ai-package-hallucination-malware-threats](https://www.reversinglabs.com/blog/ai-package-hallucination-malware-threats)
-7. **OX Security Guide:** [https://www.ox.security/blog/ai-code-security/](https://www.ox.security/blog/ai-code-security/)
+1. **Snyk** (Published 2024). *AI Code Generation Security & Quality Analysis*.
+URL: [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
+2. **Veracode** (Punlished: 2024). *GenAI Code Security Analysis*.
+URL: [https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
+3. **SonarSource** (Published 2024). *The State of Code & Developer Survey Report*.
+URL: [https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
+4. **Cloud Security Alliance (CSA)** (Published: April 6, 2026). *AI Codegen & Vulnerability Debt Research Note*.
+URL: [https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/)
+5. **Arnica** (Published: 2024). *AI-Generated Code Security Complete Guide*.
+URL: [https://www.arnica.io/blog/ai-code-security-complete-guide](https://www.arnica.io/blog/ai-code-security-complete-guide)
+6. **ReversingLabs Research** (Published: May 2023). *Luring Developers with Malicious Hallucinated Packages*.
+URL: [https://www.reversinglabs.com/blog/ai-package-hallucination-malware-threats](https://www.reversinglabs.com/blog/ai-package-hallucination-malware-threats)
+8. **OX Security** (Published: 2024). *AI Code Security Guide*.
+URL: [https://www.ox.security/blog/ai-code-security/](https://www.ox.security/blog/ai-code-security/)
