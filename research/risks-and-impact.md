@@ -8,24 +8,10 @@ Researcher: Sebastian Gonzalez
 ---
 
 ## 1. Reliability & Security Risks
-1. Key Statistics & Vulnerability Metrics
-- The 40% Vulnerability Baseline: Leading AI code generators output insecure code 35% to 45% of the time, introducing critical vulnerabilities into software systems.
-- The Verification Deficit: While AI generates roughly 46% of all production code, an acute verification gap exists—96% of developers admit they do not fully trust it, yet only 48% consistently run security scans before merging.
-- Technical Debt Explosion: AI-assisted Pull Requests (PRs) introduce significantly more security issues and an elevated code smell rate (>90%) compared to purely human-written code.
-2. "Slop Code" & Technical Debt Crisis
-- Machine-Speed Liabilities: The industry uses the term "Slop Code" to describe low-quality, unvetted AI snippets pushed to repositories at machine velocity.
-- The Review Bottleneck: This code compiles and passes basic paths but lacks architectural awareness. Remediation operates at human speed, compounding enterprise technical debt and creating severe structural brittleness.
-3. Hallucinations & Flawed Logic
-- Functional Illusions: LLMs optimize for syntactic plausibility rather than logical correctness, resulting in code that looks correct but contains deep runtime bugs, race conditions, or calls to non-existent APIs.
-4. Package Hallucination Attacks (Supply Chain Vulnerabilities)
-- "Slop squatting" Exploits: Attackers monitor the fictional library names commonly hallucinated by AI tools.
-- Malicious Squatting: They register these identical names on public package managers (like npm or PyPI) with embedded malware, tricking unsuspecting developers into downloading supply-chain exploits.
-5. Security & Vulnerability Propagation
-- Legacy Bug Reproduction: Trained on open-source repositories, AI mirrors human errors. It systematically reintroduces classic OWASP Top 10 bugs, including SQL injections, cross-site scripting (XSS), hard coded credentials, and weak encryption.
-6. Data Privacy & IP Leakage
-- Telemetry Exposure: Uploading proprietary code blocks or private API keys to third-party AI platforms risks exposing intellectual property. If prompts are used for retraining, sensitive enterprise code can leak into public model matrices
-
----
+- **Elevated Vulnerability Rate in GenAI Output:** Empirical studies from Synk and Veracode indicate that AI code generators output security vulnerabilities in 35% to 45% of generations. Common Flaws include OWASP Top 10 risks such as SQL Injection (CWE-89), Cross-Site Scripting (CWE-79), and improper input validation.
+- **Package Hallucination & Supply Chain Attacks ("Slop Squatting"):** AI models frequently invent non-existent package dependencies or library names (package hallucination). Attackers exploit this behavior by registering these hallucinated package names on public registries like npm or PyPI with embedded malware, tricking developers who install AI-suggested dependencies.
+- **Codebase Degradation and "Slop Code":** The rapid generation of unverified code leads to an accumulation of low-quality, redundant, and non-optimized snippets ("slop code"). Over time, this creates severe architectural debt and structural brittleness within enterprise codebases.
+- **Secret & Telemetry Exposure:** Uploading proprietary source code, internal API endpoints, or environment tokens to cloud-hosted AI coding assistants risks intellectual property exposure and accidental data leaks if prompts are used for model training. 
 
 ## 2. Why Human Review and Testing Remain Essential
 
@@ -41,9 +27,10 @@ Researcher: Sebastian Gonzalez
 
 ## 3. Shifting Responsibilities for Developers
 
-- **From Code Writers to Code Reviewers & Architects:** Developers spend less time writing boilerplate syntax and more time analyzing, validating, and refactoring agent-generated code.
+- **From Code Writers to Code Auditors:** Developers spend less time writing repetitive boilerplate syntax and significantly more time reading, auditing, and refactoring AI-generated code. Code review and validation have become the primary skills in AI-assisted workflows.
 - **Emphasis on System Architecture & Security:** Focus shifts toward high-level system design, threat modeling, API integration, and prompt engineering/orchestration.
 - **Quality Assurance Emphasis:** Developers must develop stronger skill sets in unit testing, debugging, and edge-case scenario evaluation.
+- 
 
 ---
 
@@ -59,8 +46,5 @@ Researcher: Sebastian Gonzalez
 
 ## 5. Credible Sources & References
 
-1. **Snyk GenAI Security & Top Tools Analysis:** [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
-2. **The State of Code & Developer Realities:** [https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/](https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/)
-3. **ArXiv Academic Analysis:** [https://arxiv.org/html/2508.14727v1](https://arxiv.org/html/2508.14727v1)
-4. **Sonar State of Code Developer Survey:** [https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
-5. **Veracode GenAI Code Security Report:** [https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
+1. **Snyk GenAI Code Security:** [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
+2. **Veracode GenAI Security Analysis:** [https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
