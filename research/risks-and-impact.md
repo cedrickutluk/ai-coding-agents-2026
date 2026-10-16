@@ -23,10 +23,10 @@ Researcher: Sebastian Gonzalez
 
 ## 3. Shifting Responsibilities for Developers
 
-- **From Code Writers to Code Auditors:** Developers spend less time writing repetitive boilerplate syntax and significantly more time reading, auditing, and refactoring AI-generated code. Code review and validation have become the primary skills in AI-assisted workflows.
-- **Emphasis on System Architecture & Security:** Focus shifts toward high-level system design, threat modeling, API integration, and prompt engineering/orchestration.
-- **Quality Assurance Emphasis:** Developers must develop stronger skill sets in unit testing, debugging, and edge-case scenario evaluation.
-- 
+- **Transition from Code Authors to Code Auditors:** Developers spend significantly less time writing boilerplate syntax and more time analyzing, validating, and refactoring agent-generated code. Code auditing has become a core competency.
+- **Focus on System Architecture and Threat Modeling:** As syntax generation is automated, software engineers shift their primary focus toward high-level system design, threat modeling, API contract governance, and security guardrails.
+- **Prompt Engineering and Agent Orchestration:** Engineers must master structuring technical requirements into clear specifications, defining prompt constraints, and orchestrating multiple AI agents in development pipelines.
+- **Elevated Quality Assurance and Edge-Case Analysis:** Developers are tasked with identifying subtle logic flaws, performance bottlenecks, and edge cases that AI models consistently overlook.
 
 ---
 
@@ -47,3 +47,4 @@ Researcher: Sebastian Gonzalez
 
 3. **SonarSource State of Code:** [https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
 4. **Cloud Security Alliance (CSA):** [https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/)
+5. **Arnica AI Code Security Guide:** [https://www.arnica.io/blog/ai-code-security-complete-guide](https://www.arnica.io/blog/ai-code-security-complete-guide)
