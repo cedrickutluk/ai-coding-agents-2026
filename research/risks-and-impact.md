@@ -15,14 +15,10 @@ Researcher: Sebastian Gonzalez
 
 ## 2. Why Human Review and Testing Remain Essential
 
-- **Lack of Contextual Understanding:** AI agents evaluate code line-by-line or within prompt windows, but lack deep understanding of business logic, domain constraints, and system architecture.
-- **Verification vs. Generation:** While AI can rapidly generate hundreds of lines of code, verifying correctness requires comprehensive automated testing (unit, integration, regression) and expert code review.
-- **Accountability & Liability:** AI models cannot take responsibility for system failures, compliance breaches, or outage costs. The software engineer remains strictly accountable for code deployed to production.
-- **Contextual Blind Spots:** LLMs generate code sequentially based on local context windows or prompt boundaries. They lack global architectural awareness, failing to enforce project-specific business logic, authorization rules, or existing design patterns.
-- **Verification Bottleneck:** According to the *Sonar State of Code Developer Survey*, 96% of developers do not fully trust AI-generated code to be functionally correct, and 95% spend significant time reviewing and debugging AI output. While generation is fast, validation remains a human intensive bottleneck.
-- **Erosion of Automated Verification:** Research indicates that while AI tool usage has surged, only 48% of developers consistently run automated security scans before merging AI-assisted pull requests, creating a gap where subtle vulnerabilities pass undetected into production.
-- **Legal & Compliance Accountability:** AI models cannot be held legally or financially liable for system outages, data breaches, or compliance failures. The human developer remains solely responsible for code deployed to production.
-
+- **Contextual and Domain Blind Spots:** AI agents evaluate code using local context windows or specific prompt inputs. They lack deep understanding of complex business logic, domain-specific compliance rules, and high-level system architecture.
+- **The verification Dilemma:** While AI drastically accelerates code *generation*, validating code correctness requires deep human analysis. Industry benchmarks show that over 90% of AI-generated Pull Requests require manual refactoring or debugging before meeting production standards.
+- **Automated Testing Gaps:** AI agents often produce synthetic unit tests that pass superficial checks ("happy paths") but fail to cover complex edge cases, race conditions, or security boundary conditions. Human engineering is required to design comprehensive integration and fuzz tests.
+- **Accountability & Legal Liability:** AI models cannot be held legally or financially liable for security breaches, system outages, or regulatory non-compliance (such as GDPR or SOC2). The human engineer retains ultimate responsibility for production code.
 ---
 
 ## 3. Shifting Responsibilities for Developers
@@ -48,3 +44,6 @@ Researcher: Sebastian Gonzalez
 
 1. **Snyk GenAI Code Security:** [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
 2. **Veracode GenAI Security Analysis:** [https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
+
+3. **SonarSource State of Code:** [https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
+4. **Cloud Security Alliance (CSA):** [https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codegen-vulnerability-debt-20260406-csa/)
