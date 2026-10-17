@@ -17,8 +17,8 @@ Researcher: Sebastian Gonzalez
 
 - **Contextual and Domain Limitations:** AI agents evaluate code using local context windows or specific prompts. They lack deep visibility into overall system architecture, domain-specific compliance requirements, and complex business logic.
 - **Widespread Review Requirement:** The Sonar State of Code Survey reports that 95% of surveyed developers spend effort reviewing, testing, and correcting AI-generated code, confirming that manual oversight remains standard practice.
-- **Comparative Review Overhead:** Findings from Sonar indicate that AI-assisted pull requests often require higher review effort and code inspection compared to traditional human-written code.
-- **Accountability & Legal Liability:** AI models cannot assume legal or financial accountability for security breaches or outage costs. The human engineer remains legally responsible for code deployed to production.
+- **Comparative Review Overhead:** According to the Sonar survey, 38% of surveyed developers said that reviewing AI-generated code requires more effort than reviewing human-written code.
+- **Accountability & Legal Liability:** AI-generated code still requires human and organizational review before deployment. Responsibility depends on applicable laws, contracts, policies, and organizational roles.
 ---
 
 ## 3. Shifting Responsibilities for Developers
@@ -43,7 +43,7 @@ Researcher: Sebastian Gonzalez
 
 1. **Snyk** (Published 2024). *AI Code Generation Security & Quality Analysis*.
 URL: [https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/](https://snyk.io/blog/ai-code-generation-code-security-quality-benefits-risks-top-tools/)
-2. **Veracode** (Punlished: 2024). *GenAI Code Security Analysis*.
+2. **Veracode** (Punlished: 2026). *GenAI Code Security Analysis*.
 URL: [https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
 3. **SonarSource** (Published 2024). *The State of Code & Developer Survey Report*.
 URL: [https://www.sonarsource.com/state-of-code-developer-survey-report.pdf](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
@@ -53,5 +53,5 @@ URL: [https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-codeg
 URL: [https://www.arnica.io/blog/ai-code-security-complete-guide](https://www.arnica.io/blog/ai-code-security-complete-guide)
 6. **ReversingLabs Research** (Published: May 2023). *Luring Developers with Malicious Hallucinated Packages*.
 URL: [https://www.reversinglabs.com/blog/ai-package-hallucination-malware-threats](https://www.reversinglabs.com/blog/ai-package-hallucination-malware-threats)
-8. **OX Security** (Published: 2024). *AI Code Security Guide*.
+7. **OX Security** (Published: 2024). *AI Code Security Guide*.
 URL: [https://www.ox.security/blog/ai-code-security/](https://www.ox.security/blog/ai-code-security/)
