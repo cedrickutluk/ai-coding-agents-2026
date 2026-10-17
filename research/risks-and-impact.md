@@ -1,6 +1,6 @@
 # AI Coding Agents: Risks, Limitations, and Impact on Developers
 
-## Overview
+## Overview 
 This document outlines the security risks, reliability limitations, and long-term impact on developers associated with integrating AI coding agents into modern software engineering workflows.
 
 Researcher: Sebastian Gonzalez
