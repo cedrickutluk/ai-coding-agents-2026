@@ -49,7 +49,7 @@ This CEP146 current event project explains how AI coding agents are changing sof
 
 ## Final Video
 
-Public YouTube link: To be added after the final video is reviewed and published.
+Public YouTube video: https://youtu.be/SHzOwoP1rcg
 
 ## Current Event
 
